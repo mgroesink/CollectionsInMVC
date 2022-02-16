@@ -1,0 +1,16 @@
+﻿<table class="table">
+    @for (int i = 0; i < ViewBag.Rows; i++)
+    {
+        <tr>
+            @for (int j = 0; j < ViewBag.Cols; j++)
+            {
+                var item = ViewBag.Items;
+                <td>
+                    @item[i, j]
+                </td>
+            }
+        </tr>
+
+    }
+</table>
+
