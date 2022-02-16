@@ -26,20 +26,20 @@ namespace CollectionsInMVC.Controllers
         {
             string[,] people = new string[5, 3];
             people[0, 0] = "RSK01";
-            people[0, 1] = "Marcel";
-            people[0, 2] = "Roesink";
+            people[0, 1] = "Maximiliaan";
+            people[0, 2] = "Roosendaal";
             people[1, 0] = "LGI01";
-            people[1, 1] = "Loni";
-            people[1, 2] = "Gojani";
+            people[1, 1] = "Leo";
+            people[1, 2] = "van der Graaf";
             people[2, 0] = "BWD01";
-            people[2, 1] = "Bert";
-            people[2, 2] = "van de Woord";
+            people[2, 1] = "Bram";
+            people[2, 2] = "Willemsen";
             people[3, 0] = "WAG01";
-            people[3, 1] = "Gerard";
-            people[3, 2] = "Wargers";
+            people[3, 1] = "Gonny";
+            people[3, 2] = "Waanders";
             people[4, 0] = "PLN01";
-            people[4, 1] = "Peter";
-            people[4, 2] = "Lijten";
+            people[4, 1] = "Patrick";
+            people[4, 2] = "van Laar";
             ViewBag.Items = people;
             ViewBag.Cols = 3;
             ViewBag.Rows = 5;
@@ -49,30 +49,30 @@ namespace CollectionsInMVC.Controllers
         public IActionResult MyDictionary()
         {
             Dictionary<string , string> people = new Dictionary<string , string>();
-            people.Add("RSK01", "Marcel Roesink");
-            people.Add("PLN01", "Peter Lijten");
-            people.Add("BWD01", "Bert van de Woord");
-            people.Add("LGI01", "Loni Gojani");
+            people.Add("RSK01", "Maximiliaan Roosendaal");
+            people.Add("PLN01", "Patrick van Laar");
+            people.Add("BWD01", "Bram Willemsen");
+            people.Add("LGI01", "Leo van der Graaf");
             return View(people);
         }
 
         public IActionResult MyQueue()
         {
             Queue<string> people = new Queue<string>();
-            people.Enqueue("Marcel Roesink");
-            people.Enqueue("Peter Lijten");
-            people.Enqueue("Bert van de Woord");
-            people.Enqueue("Loni Gojani");
+            people.Enqueue("Maximiliaan Roosendaal");
+            people.Enqueue("Patrick van Laar");
+            people.Enqueue("Bram Willemsen");
+            people.Enqueue("Leo van der Graaf");
             return View(people);
         }
 
         public IActionResult MyStack()
         {
             Stack<string> people = new Stack<string>();
-            people.Push("Marcel Roesink");
-            people.Push("Peter Lijten");
-            people.Push("Bert van de Woord");
-            people.Push("Loni Gojani");
+            people.Push("Maximiliaan Roosendaal");
+            people.Push("Patrick van Laar");
+            people.Push("Bram Willemsen");
+            people.Push("Leo van der Graaf");
             return View(people);
         }
     }
